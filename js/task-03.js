@@ -15,7 +15,7 @@ const images = [
 
 const list = document.querySelector('.gallery');
 
-const item = images.map((image) => `<li><img src=${image.url} alt=${image.alt}</li>`).join("");
+const item = images.map((image) => `<li class="item__img"><img src=${image.url} alt=${image.alt}</li>`).join("");
 
 list.classList.add("js-list__img")
 
@@ -25,6 +25,4 @@ list.insertAdjacentHTML("beforeend", item)
 console.log(list)
 console.log(item)
 
-// !========
-// при задавані класу на (ul) не працює (CSS), перебрала безліч варіантів щоб задати клас на (li) не виходить.
-// щось не розібралась
+
